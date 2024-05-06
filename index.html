@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Google search - task</title>
+</head>
+
+<body>
+  <div class="input-div">
+    <input type="search" name="" id="searchQuery" placeholder="Zadejte slovní spojení"
+      style="background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z\'></path></svg>'); background-repeat: no-repeat; background-position: right center; padding-right: 30px;">
+
+    <a class="a-button searchButton" onclick="searchForQuery()" href="#" id="searchButton">Vyhledat</a>
+    <a class="a-button" onclick="downloadResultsAsJSON()" href="#" id="downloadButton">Stáhnout výsledky (JSON)</a>
+    <a class="a-button" onclick="downloadResultsAsCSV()" href="#" id="downloadCSVButton">Stáhnout výsledky (CSV)</a>
+    <a class="a-button" onclick="downloadResultsAsXML()" href="#" id="downloadXMLButton">Stáhnout výsledky (XML)</a>
+  </div>
+
+  <div id="searchResults"></div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
